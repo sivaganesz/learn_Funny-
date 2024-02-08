@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Hover Effect</title>
+    <title>Programming_Page</title>
     <style>
         /* Style for the container */
         .container {
@@ -22,7 +22,7 @@
             border: 10px solid #ccc;
 
         }
-        @keyframes rotateColors {
+        /* @keyframes rotateColors {
       0% {
         border-color: red;
       }
@@ -38,12 +38,14 @@
       100% {
         border-color: red;
       }
-    }
+    }*/
 
     .column:hover {
       animation: rotateColors 2s infinite;
-      border-color: red;
-    }
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     
+    } 
         /* Style for the image */
         .column img {
             width: 100%;
@@ -92,32 +94,32 @@
     <!-- Column 1 -->
     <div class="column" onmouseover="changeBackground1()">
        
-        <a href="c.html"><img src="c.webp" alt="Image 1" id="hoverImage"></a>
+        <a href="c.html" target="_blank"><img src="c.webp" alt="Image 1" id="hoverImage"></a>
     </div>
 
     <!-- Column 2 -->
     <div class="column" onmouseover="changeBackground2()">
       
-       <a href=""> <img src="c++.png" alt="Image 2" height="500"></a>
+       <a href="cpp.html" target="_blank"> <img src="c++.png" alt="Image 2" height="500"></a>
     </div>
 
     <!-- Column 3 -->
     <div class="column" onmouseover="changeBackground3()">
      
-       <a href=""> <img src="python.webp" alt="Image 3"></a>
+       <a href="python.html" target="_blank"> <img src="python.webp" alt="Image 3"></a>
     </div>
 </div>
 <div class="container" >
        <!-- Column 4 -->
        <div class="column" onmouseover="changeBackground4()">
        
-        <a href=""> <img src="java.webp" alt="Image 4" ></a>
+        <a href="java.html" target="_blank"> <img src="java.webp" alt="Image 4" ></a>
      </div>
  
      <!-- Column 5 -->
      <div class="column" onmouseover="changeBackground5()">
         
-        <a href=""> <img src="sql.png" alt="Image 5"></a>
+        <a href="mysql.html" target="_blank"> <img src="sql.png" alt="Image 5"></a>
      </div>
 </div>
 
